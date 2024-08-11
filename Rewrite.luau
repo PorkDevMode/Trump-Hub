@@ -100,7 +100,7 @@ local horseVars = {
 local guiWindow = gui:MakeWindow({Name = "Trump Hub", HidePremium = false, IntroEnabled = true, IntroText = "Making exploiting great again.", SaveConfig = true, ConfigFolder = "TrumpHubTesting"})
 
 local lpTab = guiWindow:MakeTab({
-	Name = "LocalPlayer Options",
+	Name = "LocalPlayer",
 	Icon = "rbxassetid://10590477450",
 	PremiumOnly = false
 })
