@@ -97,4 +97,34 @@ local horseVars = {
     horseSpeed = 30
 }
 
-local guiWindow = gui:MakeWindow({Name = "Trump Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "TrumpHubTesting"})
+local guiWindow = gui:MakeWindow({Name = "Trump Hub", HidePremium = false, IntroEnabled = true, IntroText = "Making exploiting great again.", SaveConfig = true, ConfigFolder = "TrumpHubTesting"})
+
+local lpTab = guiWindow:MakeTab({
+	Name = "LocalPlayer Options",
+	Icon = "rbxassetid://10590477450",
+	PremiumOnly = false
+})
+
+local markTab = guiWindow:MakeTab({
+	Name = "Esp Options",
+	Icon = "rbxassetid://10590477450",
+	PremiumOnly = false
+})
+
+local aimTab = guiWindow:MakeTab({
+	Name = "Lock On Options",
+	Icon = "rbxassetid://10590477450",
+	PremiumOnly = false
+})
+
+local TitanTab = guiWindow:MakeTab({
+	Name = "Titan Options",
+	Icon = "rbxassetid://10590477450",
+	PremiumOnly = false
+})
+
+local ShifterTab = guiWindow:MakeTab({
+	Name = "Shifter Options",
+	Icon = "rbxassetid://10590477450",
+	PremiumOnly = false
+})
