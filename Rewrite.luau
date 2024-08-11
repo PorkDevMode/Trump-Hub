@@ -1,5 +1,93 @@
 -- made by PorkCheatDev on v3rm, unknowncheats. Trump 2024
+-- will support more games later on.
 
 local gui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
+getgenv().Loop = true -- Killswitch for all operations in the script, should be called for anything in a loop.
+
 local guiWindow = gui:MakeWindow({Name = "Trump Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "TrumpHubTesting"})
+
+local playerVars = {
+    autoHvh = false,
+    infBlade = false,
+    infGas = false,
+    infHook = false,
+    spoofDamage = false,
+    cannonRapidFire = false,
+    isSpawned = false,
+    enableSkills = true,
+    showAttackState = false
+}
+
+local markVars = {
+    friendlyMark = false,
+    friendlyRange = 2500,
+    friendlyColor = Color3.new(0.345098, 0.654901, 0.313725),
+
+    enemyMark = false,
+    enemyRange = 2500,
+    enemyColor = Color3.new(1, 0, 0),
+
+    titanMark = false,
+    titanRange = 2500,
+    titanColor = Color3.new(0.098039, 0.968627, 0),
+
+    shifterMark = false,
+    shifterRange = 2500,
+    shifterColor = Color3.new(1, 0, 0.784313),
+}
+
+local titanVars = {
+    regularTitanTransparency = 0,
+    regularTitanColor = Color3.new(0.066667, 0.258824, 0.039216),
+    regularTitanNapeSize = Vector3.new(6.5, 4.2, 3.2)
+}
+
+local shifterVars = { -- A fucking atrociously massive table, wish there were built in classes to luau. I looked at metatables but the code would still look yucky.
+    modifyShifterNapeSize = false,
+    titanShifterNapeTransparency = 0,
+    titanShifterNapeColor = Color3.new(150, 0, 150),
+    titanShifterNapeSizes = {
+        FemaleTitan = Vector3.new(6.5, 4.2, 3.2),
+        ArmoredTitan = Vector3.new(0, 0, 0),
+        JawTitan = Vector3.new(6.5, 4.2, 3.2),
+        ColossalTitan = Vector3.new(15, 15, 15),
+        BeastTitan = Vector3.new(6.5, 4.2, 3.2),
+        CartTitan = Vector3.new(6.5, 4.2, 3.2),
+        AttackTitan = Vector3.new(6.5, 4.2, 3.2)
+    },
+
+    modifyShifterLegSize = false,
+    titanShifterLegTransparency = 0,
+    titanShifterLegColor = Color3.new(150, 0, 150),
+    titanShifterLegSizes = {
+        FemaleTitan = Vector3.new(5, 6.46109, 5.4386),
+        ArmoredTitan = Vector3.new(5, 6.46109, 5.4386),
+        JawTitan = Vector3.new(5, 6.46109, 5.4386),
+        ColossalTitan = Vector3.new(0, 0, 0),
+        BeastTitan = Vector3.new(5, 6.46109, 5.4386),
+        CartTitan = Vector3.new(5, 6.46109, 5.4386),
+        AttackTitan = Vector3.new(5, 6.46109, 5.4386)
+    },
+
+    modifyShifterEyeSize = false,
+    titanShifterEyeColor = Color3.new(1, 1, 1),
+    titanShifterEyeTransparency = 0,
+    titanShifterEyeSizes = {
+        FemaleTitan = Vector3.new(5, 6.46109, 5.4386),
+        ArmoredTitan = Vector3.new(0, 0, 0),
+        JawTitan = Vector3.new(5, 6.46109, 5.4386),
+        ColossalTitan = Vector3.new(0, 0, 0),
+        BeastTitan = Vector3.new(5, 6.46109, 5.4386),
+        CartTitan = Vector3.new(5, 6.46109, 5.4386),
+        AttackTitan = Vector3.new(5, 6.46109, 5.4386)
+    }
+}
+
+local horseVars = {
+    modifyHorses = false,
+    horseInfStam = false,
+    horseGod = false,
+    enableHorseSpeed = false,
+    horseSpeed = 30
+}
