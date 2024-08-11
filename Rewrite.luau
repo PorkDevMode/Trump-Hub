@@ -3,9 +3,12 @@
 
 local gui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-getgenv().Loop = true -- Killswitch for all operations in the script, should be called for anything in a loop.
+local ghostFunctions = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PorkDevMode/Trump-Hub/main/GhostFunctions.luau')))() -- Where all ghost cheating functions are stored.
+local rageFunctions = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PorkDevMode/Trump-Hub/main/RageFunctions.luau')))() -- Where all rage cheating functions are stored.
 
-local guiWindow = gui:MakeWindow({Name = "Trump Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "TrumpHubTesting"})
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/PorkDevMode/Trump-Hub/main/LockOn.luau')))() -- Loads the lock on script
+
+getgenv().Loop = true -- Killswitch for all operations in the script, should be called for anything in a loop.
 
 local playerVars = {
     autoHvh = false,
@@ -91,3 +94,5 @@ local horseVars = {
     enableHorseSpeed = false,
     horseSpeed = 30
 }
+
+local guiWindow = gui:MakeWindow({Name = "Trump Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "TrumpHubTesting"})
