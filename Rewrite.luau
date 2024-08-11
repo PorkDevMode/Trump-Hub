@@ -1,6 +1,8 @@
 -- made by PorkCheatDev on v3rm, unknowncheats. Trump 2024
 -- will support more games later on.
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua", true))() -- Adonis disabler. Credits to pixeluted.
+
 local gui = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local ghostFunctions = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PorkDevMode/Trump-Hub/main/GhostFunctions.luau')))() -- Where all ghost cheating functions are stored.
