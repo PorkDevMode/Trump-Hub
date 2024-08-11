@@ -105,10 +105,50 @@ local lpTab = guiWindow:MakeTab({
 	PremiumOnly = false
 })
 
+local resourceLpSection = lpTab:AddSection({
+	Name = "Resources"
+})
+
+local pvpLpSection = lpTab:AddSection({
+	Name = "Pvp"
+})
+
+local horseLpSection = lpTab:AddSection({
+	Name = "Horse"
+})
+
+local damageLpSection = lpTab:AddSection({
+	Name = "Damage"
+})
+
 local markTab = guiWindow:MakeTab({
 	Name = "Esp Options",
 	Icon = "rbxassetid://10590477450",
 	PremiumOnly = false
+})
+
+local friendlyMarkSection = markTab:AddSection({
+	Name = "Friendly"
+})
+
+local humanMarkSection = markTab:AddSection({
+	Name = "Human Enemy's"
+})
+
+local shiftedMarkSection = markTab:AddSection({
+	Name = "Shifted Enemy's"
+})
+
+local titanMarkSection = markTab:AddSection({
+	Name = "Pure Titan's"
+})
+
+local damageSection = lpTab:AddSection({
+	Name = "Damage"
+})
+
+local damageSection = lpTab:AddSection({
+	Name = "Damage"
 })
 
 local aimTab = guiWindow:MakeTab({
@@ -117,14 +157,34 @@ local aimTab = guiWindow:MakeTab({
 	PremiumOnly = false
 })
 
-local TitanTab = guiWindow:MakeTab({
+local aimSection = aimTab:AddSection({
+	Name = "Friendly"
+})
+
+local titanTab = guiWindow:MakeTab({
 	Name = "Titan Options",
 	Icon = "rbxassetid://10590477450",
 	PremiumOnly = false
 })
 
-local ShifterTab = guiWindow:MakeTab({
+local titanSection = titanTab:AddSection({
+	Name = "Pure Titans"
+})
+
+local shifterTab = guiWindow:MakeTab({
 	Name = "Shifter Options",
 	Icon = "rbxassetid://10590477450",
 	PremiumOnly = false
+})
+
+local shifterNapeSection = shifterTab:AddSection({
+	Name = "Shifter Nape's"
+})
+
+local shifterLegSection = shifterTab:AddSection({
+	Name = "Shifter Leg's"
+})
+
+local shifterEyesSection = shifterTab:AddSection({
+	Name = "Shifter Eye's"
 })
