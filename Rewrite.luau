@@ -158,7 +158,7 @@ local aimTab = guiWindow:MakeTab({
 })
 
 local aimSection = aimTab:AddSection({
-	Name = "Friendly"
+	Name = "Options"
 })
 
 local titanTab = guiWindow:MakeTab({
